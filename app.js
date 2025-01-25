@@ -8,7 +8,7 @@ if (chute==numeroSecreto){
 
 } else{
     if (chute>numeroSecreto){
-        alert(`tente novamente,seu chute foi maior que ${numeroSecreto}`)
+        alert(`tente novamente,seu chute foi maior que ${chute}`)
     }else{
         alert(`o numero secreto é maior que ${chute}`)
 
