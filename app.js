@@ -1,11 +1,20 @@
 alert ('Bem vindo ao Jog do número secreto')
-let numeroSecreto=20;
+let numeroSecreto=10;
 console.log(numeroSecreto)
 let chute = prompt('escolha um numero entre 1 e 30')
 
 if (chute==numeroSecreto){
-    console.log(`você acertou o número secreto ${numeroSecreto}`)
+    alert(`você acertou o número secreto ${numeroSecreto}`)
 
 } else{
-    alert("tente novemente,chute foi errado")
+    if (chute>numeroSecreto){
+        alert(`tente novamente,seu chute foi maior que ${numeroSecreto}`)
+    }else{
+        alert(`o numero secreto é menor que ${chute}`)
+
+    
+    }
+
 }
+    
+
