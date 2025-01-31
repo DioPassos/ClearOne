@@ -1,12 +1,12 @@
 alert ('Bem vindo ao Jog do número secreto')
-let numeroSecreto= parseInt(Math.random() * 10 + 1);
+let numeroSecreto= parseInt(Math.random() * 100 + 1);
 console.log(numeroSecreto);
 let chute ;
 let tentativas = 1;
 
 
 while(chute != numeroSecreto){
-    chute = prompt('escolha um numero entre 1 e 30')
+    chute = prompt('escolha um numero entre 1 e 100')
     if (chute==numeroSecreto){
          break;
         
@@ -22,8 +22,14 @@ while(chute != numeroSecreto){
     }
 }
 
-if (tentativas >1 ){
-    alert(`você acertou!!!, o número secreto é ${numeroSecreto},vc acertou com ${tentativas} tentativas`); 
-}else{ 
-    alert(`você acertou!!!, o número secreto é ${numeroSecreto},vc acertou com ${tentativas} tentativa`);
-}
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert(`você acertou!!!, o número secreto é ${numeroSecreto},vc acertou com ${tentativas} ${palavraTentativa}.); 
+
+
+
+
+
+    //if (//tentativas >1 ){
+    //alert//(`//você acertou!!!, o número secreto é ${numeroSecreto},vc acertou com ${tentativas} tentativas`); 
+ //}else{ 
+   //alert(`//você acertou!!!, o número secreto é ${numeroSecreto},vc acertou com ${tentativas} tentativa`);
